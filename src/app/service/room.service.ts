@@ -5,9 +5,9 @@ import { Room } from '../domain/room';
 export class RoomService {
   private  items: Room[] = [];
   constructor() {
-    this.items.push(new Room(1, 'green', 'content'),
-      new Room(2, 'red', 'content'),
-      new Room(3, 'red', 'content'))
+    this.items.push(new Room(1, 'green', 'content', 'Зеленая', 10),
+      new Room(2, 'red', 'content', 'Красная', 15),
+      new Room(3, 'blue', 'content', 'Голубая', 20))
 
   }
 
