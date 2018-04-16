@@ -4,7 +4,8 @@ export class Room {
     public name: string,
     public content: string,
     public color: string,
-    public capacity: number
+    public capacity: number,
+    public participant: number
 
-  ){}
+  ) {}
 }

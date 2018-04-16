@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { Room } from '../../domain/room';
 
 @Component({
@@ -8,9 +8,21 @@ import { Room } from '../../domain/room';
 })
 export class RoomCardComponent implements OnInit {
   @Input() room: Room;
+  @Output() take = new EventEmitter<number>();
+  @Output() decline = new EventEmitter<number>();
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onTake() {
+    this.take.emit(this.room.id);
+  }
+
+  onDecline() {
+    this.decline.emit(this.room.id);
   }
 
 }

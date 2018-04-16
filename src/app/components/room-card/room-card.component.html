@@ -5,8 +5,13 @@
       <span class="mySpan">{{room.content}}</span>
       <span class="mySpan">{{room.color}}</span>
       <span class="mySpan">{{room.capacity}}</span>
+      <span class="mySpan">{{room.participant}}</span>
 
     </a>
+    <div class="card-action">
+      <a href="#" (click)="onTake(); false">Take</a>
+      <a href="#" (click)="onDecline(); false">Decline</a>
+    </div>
 
 
   </div>

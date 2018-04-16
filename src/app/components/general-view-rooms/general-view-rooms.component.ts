@@ -9,10 +9,24 @@ import { Room } from '../../domain/room';
 })
 export class GeneralViewRoomsComponent implements OnInit {
 items: Room[] = [];
-  constructor(private service:RoomService) { }
+  constructor(private service: RoomService) { }
 
   ngOnInit() {
+    this.load();
+  }
+
+  onTake(id: number) {
+    this.service.takeById(id);
+    this.load();
+  }
+
+  onDecline(id: number) {
+    this.service.declineById(id);
+    this.load();
+  }
+  private  load() {
     this.items = this.service.getAll();
+
   }
 
 }
