@@ -6,7 +6,8 @@ export class RoomService {
   private  items: Room[] = [];
   constructor() {
     this.items.push(new Room(1, 'green', 'content'),
-      new Room(2, 'red', 'content'))
+      new Room(2, 'red', 'content'),
+      new Room(3, 'red', 'content'))
 
   }
 

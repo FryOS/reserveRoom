@@ -8,13 +8,15 @@ import { GeneralViewRoomsComponent } from './components/general-view-rooms/gener
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
 
 import { RoomService } from './service/room.service';
+import { RoomCardComponent } from './components/room-card/room-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GeneralViewRoomsComponent,
-    RoomDetailsComponent
+    RoomDetailsComponent,
+    RoomCardComponent
   ],
   imports: [
     BrowserModule,
