@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneralViewRoomsComponent } from './components/general-view-rooms/general-view-rooms.component';
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
+import { RoomComponent } from './service/room/room.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GeneralViewRoomsComponent,
-    RoomDetailsComponent
+    RoomDetailsComponent,
+    RoomComponent
   ],
   imports: [
     BrowserModule,
