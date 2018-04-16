@@ -6,14 +6,14 @@ export class RoomService {
   private  items: Room[] = [];
   constructor() {
     this.items.push(new Room(1, 'green', 'content'),
-      new Room(1, 'red', 'content'),)
+      new Room(2, 'red', 'content'))
 
   }
 
   getAll(): Room[] {
     return this.items;
   }
-  getItemById(): Room {
+  getItemById(id: number): Room {
     return this.items.find(item => item.id === id);
   }
 

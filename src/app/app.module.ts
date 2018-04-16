@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneralViewRoomsComponent } from './components/general-view-rooms/general-view-rooms.component';
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
-import { RoomComponent } from './service/room/room.component';
+
 import { RoomService } from './service/room.service';
 
 
@@ -14,8 +14,7 @@ import { RoomService } from './service/room.service';
   declarations: [
     AppComponent,
     GeneralViewRoomsComponent,
-    RoomDetailsComponent,
-    RoomComponent
+    RoomDetailsComponent
   ],
   imports: [
     BrowserModule,

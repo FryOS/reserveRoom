@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RoomService } from '../../service/room.service';
+import { Room } from '../../domain/room';
 
 @Component({
   selector: 'app-general-view-rooms',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./general-view-rooms.component.scss']
 })
 export class GeneralViewRoomsComponent implements OnInit {
-
-  constructor() { }
+items: Room[] = [];
+  constructor(private service:RoomService) { }
 
   ngOnInit() {
+    this.items = this.service.getAll();
   }
 
 }
