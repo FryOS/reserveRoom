@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GeneralViewRoomsComponent } from './components/general-view-rooms/general-view-rooms.component';
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
 import { RoomComponent } from './service/room/room.component';
+import { RoomService } from './service/room.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { RoomComponent } from './service/room/room.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [RoomService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
