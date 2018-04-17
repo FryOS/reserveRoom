@@ -5,8 +5,16 @@
     </div>
   </div>
 
-  <div class="row col s12 m6">
-    <span>todo месяц</span>
+  <div class="row ">
+    <div class="col s12 m6 offset-m6 month">
+      <a href="" class="secondary-content" (click)="right(); false">
+        <i class="material-icons right">keyboard_arrow_right</i>
+      </a>
+      <span>{{ month | date:"MMMM" }}</span>
+      <a href="" class="secondary-content" (click)="left(); false">
+        <i class="material-icons left">keyboard_arrow_left</i>
+      </a>
+    </div>
   </div>
 
   <div class="row" *ngFor="let item of items">

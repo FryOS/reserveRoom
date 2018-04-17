@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RoomService } from '../../service/room.service';
-import { Room } from '../../domain/room';
+import { Room } from '../../domain/Room';
+
 
 @Component({
   selector: 'app-general-view-rooms',
@@ -9,6 +10,22 @@ import { Room } from '../../domain/room';
 })
 export class GeneralViewRoomsComponent implements OnInit {
 items: Room[] = [];
+month = new Date();
+months: string [] = [
+                'Январь',
+                'Февраль',
+                'Март',
+                'Апрель',
+                'Май',
+                'Июнь',
+                'Июль',
+                'Август',
+                'Сентябрь',
+                'Октябрь',
+                'Ноябрь',
+                'Декабрь' ];
+
+
   constructor(private service: RoomService) { }
 
   ngOnInit() {
@@ -28,5 +45,13 @@ items: Room[] = [];
     this.items = this.service.getAll();
 
   }
+
+  left() {
+    console.log('left');
+  }
+  right() {
+    console.log('right');
+  }
+
 
 }

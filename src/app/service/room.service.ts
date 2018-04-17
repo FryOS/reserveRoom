@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Room } from '../domain/room';
+import { Room } from '../domain/Room';
 
 @Injectable()
 export class RoomService {

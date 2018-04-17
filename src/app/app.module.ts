@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import { MomentModule } from 'ngx-moment';
 
 import { AppRoutingModule } from './app-routing.module';
 
