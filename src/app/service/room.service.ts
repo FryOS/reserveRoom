@@ -6,9 +6,9 @@ export class RoomService {
   private items: Room[] = [];
 
   constructor() {
-    this.items.push(new Room(1, 'green', 'content', 'Зеленая', 10, 0),
-      new Room(2, 'red', 'content', 'Красная', 15, 0),
-      new Room(3, 'blue', 'content', 'Голубая', 20, 0));
+    this.items.push(new Room(1, 'Зеленая', 'content', 'Зеленая', 10, 0),
+      new Room(2, 'Красная', 'content', 'Красная', 15, 0),
+      new Room(3, 'Голубая', 'content', 'Голубая', 20, 0));
 
   }
 

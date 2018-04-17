@@ -1,18 +1,115 @@
-<div class="card">
-  <div class="card-image">
-    <a [routerLink] = "['/', room.id]">
-      <span class="mySpan">{{room.name}}</span>
-      <span class="mySpan">{{room.content}}</span>
-      <span class="mySpan">{{room.color}}</span>
-      <span class="mySpan">{{room.capacity}}</span>
-      <span class="mySpan">{{room.participant}}</span>
+<div class="row">
 
-    </a>
-    <div class="card-action">
-      <a href="#" (click)="onTake(); false">Take</a>
-      <a href="#" (click)="onDecline(); false">Decline</a>
+  <div class="col s12 m4 l3">
+    <div class="card myCard">
+      <a [routerLink] = "['/', room.id]">
+        <span class="mySpan">{{room.name}} переговорка</span>
+        <span class="mySpan">{{room.color}}</span>
+        <span class="mySpan">До {{room.capacity}} персон</span>
+      </a>
     </div>
-
-
   </div>
+
+  <div class="col s12 m8 l9">
+    <div class="timeContainer">
+      <div class="blocksTime">
+        <div class="oneBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+
+        <div class="twoBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+      </div>
+
+      <div class="blocksTime">
+        <div class="oneBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+
+        <div class="twoBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+      </div>
+      <div class="blocksTime">
+        <div class="oneBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+
+        <div class="twoBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+      </div>
+      <div class="blocksTime">
+        <div class="oneBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+
+        <div class="twoBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+      </div>
+      <div class="blocksTime">
+        <div class="oneBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+
+        <div class="twoBlockTime">
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+          <a href=""><span>09:00</span>+</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
+
+
+
+
+
+<!--<div class="card-action">-->
+  <!--<a href="#" (click)="onTake(); false">Take</a>-->
+  <!--<a href="#" (click)="onDecline(); false">Decline</a>-->
+<!--</div>-->
+

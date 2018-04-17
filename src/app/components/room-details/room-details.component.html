@@ -1,11 +1,15 @@
 <div class="cotainer">
   <div class="row">
-    <div class="col s12">
+    <div class="col s12 m6 l6">
+
       <app-room-card
         [room]="room"
         (take)="onTake($event)"
         (decline)="onDecline($event)"
       ></app-room-card>
+
     </div>
+
+
   </div>
 </div>

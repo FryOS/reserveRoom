@@ -4,15 +4,20 @@
       <h1>Reserve Room</h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col s12 m6" *ngFor="let item of items">
-      <ul>
-        <li><app-room-card [room] = item
+
+  <div class="row col s12 m6">
+    <span>todo месяц</span>
+  </div>
+
+  <div class="row" *ngFor="let item of items">
+    <div class="col s12 m6" >
+
+        <app-room-card [room] = item
         (take)="onTake($event)"
         (decline)="onDecline($event)"
-        ></app-room-card></li>
-      </ul>
+        ></app-room-card>
 
     </div>
   </div>
+
 </div>
